@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>To Do List</title>
+		<!-- <link rel="stylesheet" href="css/app.css"> -->
+		<link rel="stylesheet" href="css/headers.css">	
+		<link rel="stylesheet" href="css/bootstrap.css">
+		
+		
+		<link rel="stylesheet" href="css/main.css">	
+		
+		
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="jui/js/jquery-ui-1.8.20.min.js"></script>
+		<script type="text/javascript" src="jui/js/jquery.ui.timepicker.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="jui/css/jquery.ui.all.css" media="screen" />
+
+		<script type="text/javascript" src="js/demo.ui.js"></script>
+		
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+
+	</head>
+	<body>
+		<section role="region" id="list-view">
+			<header>
+		      <menu type="toolbar" class="dropdown">
+		        <a id="settings-btn" class="dropdown-toggle" data-toggle="dropdown" href="#">
+		          <span class="icon icon-settings">
+		            
+		          </span>
+		        </a>
+		        <ul class="pull-right dropdown-menu nav" role="menu" aria-labelledby="drop3">
+		          <li><a tabindex="-1" href="#"><img src="img/about.png">About</a></li>
+		          <li><a tabindex="-1" href="#"><img src="img/download.png">Install</a></li>		          		          
+		        </ul>
+		      </menu>
+		      <h1><img width="40" src="img/To-Do-List.png"> List To Do</h1>
+		    </header>
+		</section>
+		<form id="todo-form">
+			<fieldset>
+  				<legend>Add New ToDo:</legend>			
+				<table>
+					<tr>
+						<td width="200px">Name</td>
+						<td width="90%"><input name="t_name" type="text" required></td>
+					</tr>
+					<tr>
+						<td>Date Time</td>
+						<td><input id="da-ex-datetimepicker" name="date" type="text"></td>
+					</tr>
+					<tr>
+						<td>Description</td>
+						<td><textarea name="desc" value="" rows="4" cols="25"></textarea></td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<span class="item button"><input id="todo-op-discard" value="Discard" type="button"></span>
+							<span class="item button button-default"><input id="todo-op-save" value="Save" type="submit"></span>
+						</td>					
+					</tr>
+				</table>
+			</fieldset>			
+			<input name="id_entry" value="0" type="hidden">
+		</form>
+
+		<div class="todolist">
+			<fieldset>
+  				<legend>To Do List:</legend>	
+				<table id="todo-table">
+					<tbody>
+						<tr id="todo-head">
+							<!-- <th>ID</th> -->
+							<th>Name</th>
+							<th>Date Time</th>
+							<th>Description</th>
+							<th>Actions</th>
+						</tr>
+					</tbody>
+				</table>	
+			</fieldset>
+		</div>
+		<script src="js/main.js"></script>
+	
+	</body>
+</html>
