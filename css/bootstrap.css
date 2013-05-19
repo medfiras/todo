@@ -652,7 +652,7 @@ a:focus {
 }
 
 p {
-  margin: 0 0 10px;
+  margin: 0px;
 }
 
 .lead {
@@ -1032,20 +1032,19 @@ form {
 }
 
 fieldset {
-  border-color: #999797;
+  border: 1px solid #B3B3B3;
   border-radius: 5px 5px 5px 5px;
 }
 
 legend {
-  border-color: -moz-use-text-color -moz-use-text-color #7F7F7F;
+  border-color: #B3B3B3;
   border-radius: 5px 5px 5px 5px;
   border-style: solid;
   border-width: 1px;
   color: #000000;
   display: block;
-  font-size: 23px;
-  line-height: 40px;
-  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 30px;
   padding: 0;
   padding: 0 20px;
   width: auto;
@@ -2004,6 +2003,7 @@ table {
   background-color: transparent;
   border-collapse: collapse;
   border-spacing: 0;
+  margin-top: 15px;
 }
 
 .table {
@@ -2917,7 +2917,7 @@ table th[class*="span"],
   float: left;
   min-width: 120px;
   padding: 5px 0;
-  margin: -5px 25px 0 0;
+  margin: -5px 12px 0 0;
   list-style: none;
   background-color: #ffffff;
   border: 1px solid #ccc;
