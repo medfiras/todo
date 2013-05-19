@@ -5,6 +5,12 @@ html {
     min-height: 100%;    */
     background: #FFFFFF;
 }
+.success {
+	background-color: #090 !important;
+}
+.error {
+	background-color:#900 !important;
+}
 body { 
 	font-family: Arial, sans-serif;
 	color: #000000;

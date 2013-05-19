@@ -79,12 +79,22 @@ var todo = {
 		entry.id = todo.index;
 		window.localStorage.setItem("todo:index", ++todo.index);
 		window.localStorage.setItem("todo:"+ entry.id, JSON.stringify(entry));
+		jQuery.noticeAdd({
+				text: 'To do list added succefuly !',
+				stay: false,
+				type: 'success'
+			});
 	},
 	storeEdit: function(entry) {
 		window.localStorage.setItem("todo:"+ entry.id, JSON.stringify(entry));
 	},
 	storeRemove: function(entry) {
 		window.localStorage.removeItem("todo:"+ entry.id);
+		jQuery.noticeAdd({
+				text: 'To do list removed succefuly !',
+				stay: false,
+				type: 'error'
+			});
 	},
 
 	tableAdd: function(entry) {
@@ -104,6 +114,7 @@ var todo = {
 		$tr.appendChild($td);
 		$tr.setAttribute("id", "entry-"+ entry.id);
 		todo.$table.appendChild($tr);
+
 	},
 	tableEdit: function(entry) {
 		var $tr = document.getElementById("entry-"+ entry.id), $td, key;
