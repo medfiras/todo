@@ -87,6 +87,11 @@ var todo = {
 	},
 	storeEdit: function(entry) {
 		window.localStorage.setItem("todo:"+ entry.id, JSON.stringify(entry));
+		jQuery.noticeAdd({
+				text: 'To do list edited succefuly !',
+				stay: false,
+				type: 'success'
+			});
 	},
 	storeRemove: function(entry) {
 		window.localStorage.removeItem("todo:"+ entry.id);
