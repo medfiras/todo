@@ -70,7 +70,7 @@ a:hover, a:active {
 #todo-table, #todo-table th, #todo-table td { 
 	padding: 5px; 
 	text-align: center; 
-	border: 0px solid #B9BABE; 
+	border: 1px solid #FFFFFF; 
 	font-size: 12px;
 	margin-top: 15px;
 }
